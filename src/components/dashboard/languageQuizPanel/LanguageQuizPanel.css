@@ -1,5 +1,3 @@
-/* LanguageQuizPanel.css */
-
 .quiz-panel-container {
   margin-top: 20px;
   padding: 20px;
@@ -69,21 +67,41 @@
 @media screen and (max-width: 870px) {
   .quiz-card {
     padding: 12px;
+    width: 80%;
+    margin: 0 auto;
   }
   .quiz-card h3 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
   .quiz-btn {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding: 5px 10px;
   }
 }
-@media screen and (max-width: 870px) {
-  .quiz-cards {
-    grid-template-columns: none;
+
+@media screen and (max-width: 600px) {
+  .quizlink-h2 {
+    font-size: 1.4rem;
   }
-  .quiz-card {
-    width: 80%;
-    margin: 0 auto;
+  .quiz-cards {
+    gap: 10px;
+  }
+  .quiz-card h3 {
+    font-size: 0.8rem;
+  }
+  .quiz-btn {
+    font-size: 0.6rem;
+  }
+}
+@media screen and (max-width: 350px) {
+  .quizlink-h2 {
+    font-size: 1.1rem;
+  }
+  .quiz-card h3 {
+    text-wrap: nowrap;
+    font-size: 0.65rem;
+  }
+  .quiz-btn {
+    font-size: 0.5rem;
   }
 }

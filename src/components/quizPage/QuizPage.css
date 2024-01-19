@@ -34,8 +34,7 @@
 }
 
 .option-container {
-  width: 50%;
-  padding: 5px;
+  padding: 5px 10px;
 }
 
 .option-container input[type='radio'] {
