@@ -1,0 +1,76 @@
+.auth {
+  height: 90vh;
+  display: grid;
+  place-items: center;
+  background-image: url('../../assets/doodle.jpg');
+}
+.auth-container {
+  width: 400px;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+  min-height: 400px;
+}
+.auth-h1 {
+  text-align: center;
+}
+.auth-btn {
+  background-color: #012ab7;
+  color: #fff;
+  font-size: 12px;
+  padding: 10px 45px;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  cursor: pointer;
+  width: fit-content;
+  margin: 10px auto;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ea4335;
+  width: fit-content;
+  padding: 10px 15px;
+  margin: 0 auto;
+  height: 25px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.social-icons span {
+  padding: 0 10px;
+}
+.social-icons:hover {
+  background-color: #c62416;
+}
+.auth-p {
+  font-size: 12px;
+  text-align: center;
+}
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 10px auto;
+}
+.auth-form input {
+  background-color: #eee;
+  border: none;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+.forget-pswd {
+  color: #333;
+  font-size: 13px;
+  text-decoration: none;
+  margin: 15px 0 10px;
+  text-align: center;
+}

@@ -1,70 +1,96 @@
-# Getting Started with Create React App
+# Quizzy Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to Quizzy Frontend! This React-based frontend application complements the Quizzy backend, providing a feature-rich interface for seamless user authentication, profile management, engaging quizzes, and more. Before using the frontend, ensure that the [Quizzy backend](#) is running to access all features.
 
-## Available Scripts
+## Screenshots
 
-In the project directory, you can run:
+### Login Page
 
-### `npm start`
+![Login Page](./screenshots/login.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Dashboard
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+![Dashboard](./screenshots/dashboard.png)
 
-### `npm test`
+### Quiz Page
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Quiz Page](./screenshots/quiz.png)
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Authentication and Authorization
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Login Page (`/login`):** Users can securely log in using their credentials.
+- **Signup Page (`/signup`):** New users can register for an account.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Private Routes:**
+  - `/dashboard`: Access the user's personalized dashboard.
+  - `/profile`: View and update user details.
+  - `/quiz/:language`: Engage in quizzes with dynamic language routing.
 
-### `npm run eject`
+### Profile Management
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Update User Details (`/profile`):** Users can update their profile information, such as name, email, and password.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Reset Stats (`/profile`):** Reset user statistics to start afresh.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Quiz Features
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **Quiz Page (`/quiz/:language`):** Participate in quizzes with dynamic language-based questions.
 
-## Learn More
+### State Management
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Redux Toolkit:** Utilizes Redux Toolkit for efficient state management.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **State Persistence:** Authenticated state is persisted to ensure a seamless user experience across sessions.
 
-### Code Splitting
+### Toast Notifications
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+- **React Toastify:** Provides visually appealing toast notifications for user feedback.
 
-### Analyzing the Bundle Size
+## Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Before starting the frontend, make sure to run the [Quizzy backend](#) to access all features.
 
-### Making a Progressive Web App
+1. Clone the repository.
+2. Run `npm install` to install dependencies.
+3. Start the Quizzy backend by following its README instructions.
+4. Run the following command to start the frontend:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```bash
+npm start
+```
 
-### Advanced Configuration
+The frontend will be accessible at `http://localhost:3000/`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Routes
 
-### Deployment
+### Public Routes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- `/login`: Login page.
+- `/signup`: Signup page.
 
-### `npm run build` fails to minify
+### Private Routes
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- `/dashboard`: User dashboard.
+- `/profile`: User profile.
+- `/quiz/:language`: Quiz page with dynamic language routing.
+
+## Upcoming Features
+
+### Create New Question
+
+- **Create Question Page (`/create-question`):** Users can create new quiz questions.
+
+### Leaderboard
+
+- **Leaderboard Page (`/leaderboard`):** View the top performers in the quizzes.
+
+## Dependencies
+
+- React
+- React Router DOM
+- Redux Toolkit
+- React Toastify
+
+### Thank you for choosing Quizzy! If you have any questions or suggestions, feel free to reach out. Happy quizzing!

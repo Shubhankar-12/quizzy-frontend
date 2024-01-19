@@ -1,24 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Footer from './components/footer/Footer';
+import Home from './components/home/Home';
+import Navbar from './components/navbar/Navbar';
+import SignIn from './components/Auth/signin/Signin';
+import SignUp from './components/Auth/signup/Signup';
+import Dashboard from './components/dashboard/Dashboard';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import PrivateRoute from './components/privateRoute/PrivateRoute';
+import ProfilePage from './components/profile/ProfilePage';
+import UpdateForm from './components/profile/updateForm/UpdateForm';
+import { useSelector } from 'react-redux';
+import Quiz from './components/quizPage/Quiz';
 
 function App() {
+
+  const isModalOpen = useSelector((state) => state.modal.isModalOpen);
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <ToastContainer />
+      {isModalOpen && <UpdateForm />}
+      <Router>
+        <Routes>
+          <Route path='/' element={<Navbar />} >
+
+            <Route index element={<Home />} />
+            <Route path='/login' element={<SignIn />} />
+            <Route path='/signup' element={<SignUp />} />
+            <Route path='' element={<PrivateRoute />}>
+              <Route path='/dashboard' element={<Dashboard />} />
+            </Route>
+            <Route path='' element={<PrivateRoute />}>
+              <Route path='/profile' element={<ProfilePage />} />
+            </Route>
+            <Route path='' element={<PrivateRoute />}>
+              <Route path='quiz/*' element={<Quiz />} />
+            </Route>
+          </Route>
+        </Routes>
+      </Router>
+      <Footer />
+    </div >
   );
 }
 

@@ -1,0 +1,46 @@
+.profile-quick-tabs {
+  margin-top: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: space-evenly;
+  padding: 10px 0;
+}
+.ProfileTab {
+  display: flex;
+  justify-content: space-between;
+  background-color: #daeaff;
+  width: 25%;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.ProfileTab:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.tab-content {
+  padding: 10px 5px;
+}
+.tab-content h2 {
+  color: #012ab7;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+.tab-content p {
+  font-weight: 300;
+}
+.tab-icon {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+}
+.tab-icon svg {
+  height: 30px;
+  width: 30px;
+  color: #012ab7;
+}

@@ -1,0 +1,63 @@
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+}
+.greeting {
+  color: #012ab7;
+  padding: 10px;
+}
+.greeting p {
+  color: #000;
+  padding: 10px;
+  font-size: 1.1rem;
+}
+.user-name {
+  font-style: italic;
+  background-color: #f5c10472;
+  padding: 2px;
+  text-decoration: underline;
+}
+.summary-details {
+  display: flex;
+  padding: 10px 15px;
+  justify-content: space-evenly;
+}
+.proficiency,
+.language,
+.points,
+.ranking {
+  height: 100px;
+  width: 20%;
+  padding: 15px 10px;
+  margin: 0 10px;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.322);
+}
+.proficiency {
+  background: linear-gradient(45deg, #3498db, #1abc9c);
+}
+.language {
+  background: linear-gradient(45deg, #e74c3c, #3498db);
+}
+.points {
+  background: linear-gradient(45deg, #1abc9c, #f5c104);
+}
+.ranking {
+  background: linear-gradient(45deg, #f5c104, #e74c3c);
+}
+.summary-head {
+  margin-bottom: 10px;
+}
+
+.card-h3 {
+  font-size: 2rem;
+  margin: 0;
+  color: #000;
+}
+
+.card-h3 span {
+  font-size: 1.5rem;
+  color: #fff;
+}

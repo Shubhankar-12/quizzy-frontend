@@ -1,0 +1,38 @@
+.profile-banner {
+  height: 150px;
+  background-image: url('../../../assets/banner-bg.jpg');
+  background-size: cover;
+  padding: 20px;
+}
+.banner-edit {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+}
+.edit-img {
+  background-color: #fff;
+  display: grid;
+  place-items: center;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  font-size: larger;
+  font-weight: 400;
+  cursor: pointer;
+  padding: 5px;
+}
+.img-container {
+  position: relative;
+  height: 100px;
+  width: 100px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  top: 65px;
+  left: 100px;
+}
+.img-container img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}

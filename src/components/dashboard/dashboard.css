@@ -1,0 +1,5 @@
+.dashboard {
+  min-height: 85vh;
+  background-image: url('../../assets/doodle.jpg');
+  margin-top: 10px;
+}

@@ -1,0 +1,39 @@
+.info-h1 {
+  color: #012ab7;
+  text-align: center;
+}
+.info-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  padding: 10px 20px;
+}
+.info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: #012ab7;
+}
+.info-icon svg {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+}
+.info-head {
+  color: #012ab7;
+  margin-bottom: 0;
+}
+.info-p {
+  text-align: center;
+  font-size: large;
+}
