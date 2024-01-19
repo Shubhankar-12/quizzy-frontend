@@ -56,3 +56,17 @@
 .hero-btn:hover {
   background-color: #001a8c;
 }
+@media screen and (max-width: 975px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .banner {
+    width: 50%;
+  }
+
+  .hero-data {
+    padding: 10px;
+  }
+}

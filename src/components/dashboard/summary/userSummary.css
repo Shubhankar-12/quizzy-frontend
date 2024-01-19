@@ -27,7 +27,7 @@
 .language,
 .points,
 .ranking {
-  height: 100px;
+  min-height: 100px;
   width: 20%;
   padding: 15px 10px;
   margin: 0 10px;
@@ -49,6 +49,7 @@
 }
 .summary-head {
   margin-bottom: 10px;
+  font-size: 1.2rem;
 }
 
 .card-h3 {
@@ -60,4 +61,34 @@
 .card-h3 span {
   font-size: 1.5rem;
   color: #fff;
+}
+@media screen and (max-width: 870px) {
+  .summary-details {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .proficiency,
+  .language,
+  .points,
+  .ranking {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .greeting h1 {
+    font-size: 1.5rem;
+  }
+  .summary-details {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .proficiency,
+  .language,
+  .points,
+  .ranking {
+    width: 50%;
+    margin: 0 auto;
+  }
 }

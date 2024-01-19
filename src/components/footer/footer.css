@@ -44,3 +44,18 @@
   font-weight: 300;
   font-style: italic;
 }
+@media screen and (max-width: 800px) {
+  .socials {
+    width: 35%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .footer-container {
+    flex-direction: column;
+    height: auto;
+  }
+  .socials {
+    padding: 10px 0;
+    width: 50%;
+  }
+}

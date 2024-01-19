@@ -54,7 +54,7 @@ const QuizPage = () => {
         const { scoredPoints, totalPoints } = calculatePoints();
         setScoredPoint(scoredPoints);
         setTotalPoint(totalPoints);
-        const res = await updateStats({
+        await updateStats({
             additionalCurrentPoints: scoredPoints,
             additionalTotalPoints: totalPoints
         }).unwrap();
