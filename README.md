@@ -1,20 +1,32 @@
 # Quizzy Frontend
 
-Welcome to Quizzy Frontend! This React-based frontend application complements the Quizzy backend, providing a feature-rich interface for seamless user authentication, profile management, engaging quizzes, and more. Before using the frontend, ensure that the [Quizzy backend](#) is running to access all features.
+Welcome to Quizzy Frontend! This React-based frontend application complements the Quizzy backend, providing a feature-rich interface for seamless user authentication, profile management, engaging quizzes, and more. Before using the frontend, ensure that the [Quizzy backend](https://github.com/Shubhankar-12/quizzy-backend) is running to access all features.
 
 ## Screenshots
 
+### Main Page
+
+![Main Page](https://github.com/Shubhankar-12/quizzy-frontend/blob/main/public/screenshots/main-screen.png)
+
+_The main page provides an overview of the Quizzy application, showcasing various features available to users._
+
 ### Login Page
 
-![Login Page](./screenshots/login.png)
+![Login Page](https://github.com/Shubhankar-12/quizzy-frontend/blob/main/public/screenshots/login-screen.png)
 
-### Dashboard
-
-![Dashboard](./screenshots/dashboard.png)
+_The login page allows users to securely log in using their credentials, ensuring a protected and personalized experience._
 
 ### Quiz Page
 
-![Quiz Page](./screenshots/quiz.png)
+![Quiz Page](https://github.com/Shubhankar-12/quizzy-frontend/blob/main/public/screenshots/quiz-screen.png)
+
+_The quiz page presents an engaging interface for users to participate in quizzes. Dynamic language routing enhances the diversity of questions._
+
+### Profile Page
+
+![Profile Page](https://github.com/Shubhankar-12/quizzy-frontend/blob/main/public/screenshots/profile-screen.png)
+
+_On the profile page, users can manage and update their details, including resetting their stats for a fresh start._
 
 ## Features
 
@@ -50,7 +62,7 @@ Welcome to Quizzy Frontend! This React-based frontend application complements th
 
 ## Usage
 
-Before starting the frontend, make sure to run the [Quizzy backend](#) to access all features.
+Before starting the frontend, make sure to run the [Quizzy backend](https://github.com/Shubhankar-12/quizzy-backend) to access all features.
 
 1. Clone the repository.
 2. Run `npm install` to install dependencies.
@@ -85,6 +97,10 @@ The frontend will be accessible at `http://localhost:3000/`.
 ### Leaderboard
 
 - **Leaderboard Page (`/leaderboard`):** View the top performers in the quizzes.
+
+### Google OAuth
+
+- **Google OAuth Integration:** Enhance user authentication options by integrating Google OAuth.
 
 ## Dependencies
 
