@@ -24,7 +24,7 @@ _The quiz page presents an engaging interface for users to participate in quizze
 
 ### Profile Page
 
-![Profile Page](https://github.com/Shubhankar-12/quizzy-frontend/blob/main/public/screenshots/profile-screen.png)
+![Profile Page](https://github.com/Shubhankar-12/quizzy-frontend/blob/main/public/screenshots/profile-page.png)
 
 _On the profile page, users can manage and update their details, including resetting their stats for a fresh start._
 
