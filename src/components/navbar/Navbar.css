@@ -61,3 +61,34 @@
   background-color: #012ab7;
   color: #fff;
 }
+.nav-ham {
+  display: none;
+}
+.nav-dropdown {
+  position: absolute;
+  z-index: 2;
+  background-color: #fbf9fa;
+  right: 30px;
+  padding: 2px 5px;
+  display: none;
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 430px) {
+  .navigation {
+    display: none;
+  }
+  .nav-ham {
+    display: block;
+  }
+  .nav-dropdown {
+    display: block;
+    animation: slidedown 0.3s ease-in;
+  }
+}
