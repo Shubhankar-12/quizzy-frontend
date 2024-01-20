@@ -1,16 +1,17 @@
 .profile-quick-tabs {
-  margin-top: 30px;
-  display: flex;
-  width: 100%;
-  justify-content: space-evenly;
+  margin: 30px auto;
+  display: grid;
+  width: 90%;
+  grid-template-columns: repeat(3, 1fr);
   padding: 10px 0;
+  gap: 20px;
 }
 .ProfileTab {
   display: flex;
   justify-content: space-between;
   background-color: #daeaff;
-  width: 25%;
-  padding: 10px 15px;
+  width: 90%;
+  padding: 0 15px;
   border-radius: 10px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -43,4 +44,36 @@
   height: 30px;
   width: 30px;
   color: #012ab7;
+}
+@media screen and (max-width: 960px) {
+  .tab-content h2 {
+    font-size: 1.3rem;
+    text-wrap: nowrap;
+  }
+  .tab-content p {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .ProfileTab {
+    flex-direction: column;
+    padding-bottom: 5px;
+  }
+  .tab-content {
+    padding: 0 5px;
+  }
+  .tab-icon {
+    padding: 0 10px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .tab-content p {
+    font-size: 0.7rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  .profile-quick-tabs {
+    grid-template-columns: none;
+    width: 50%;
+  }
 }

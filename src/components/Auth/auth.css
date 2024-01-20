@@ -18,7 +18,7 @@
   background-color: #012ab7;
   color: #fff;
   font-size: 12px;
-  padding: 10px 45px;
+  padding: 10px 30px;
   border: 1px solid transparent;
   border-radius: 8px;
   font-weight: 600;
@@ -80,5 +80,14 @@
   }
   .social-icons span {
     display: none;
+  }
+  .auth-h1 {
+    font-size: 1.6rem;
+  }
+  .auth-p {
+    font-size: 10px;
+  }
+  .auth-form input {
+    font-size: 12px;
   }
 }

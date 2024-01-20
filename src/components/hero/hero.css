@@ -70,3 +70,25 @@
     padding: 10px;
   }
 }
+@media screen and (max-width: 600px) {
+  .hero-heading {
+    font-size: 2rem;
+  }
+  .hero-para {
+    font-size: 1rem;
+  }
+  .hero-btn {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .hero-heading {
+    font-size: 1.5rem;
+  }
+  .hero-para {
+    font-size: 0.8rem;
+  }
+  .hero-btn {
+    font-size: 0.6rem;
+  }
+}

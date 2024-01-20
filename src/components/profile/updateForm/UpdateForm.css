@@ -11,12 +11,18 @@
 }
 .close-update {
   position: absolute;
-  top: 40px;
-  right: 80px;
+  top: 30px;
+  background-color: white;
+  right: 20px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: grid;
+  place-items: center;
 }
 .close-update svg {
   height: 50px;
   width: 50px;
-  color: #f11a06;
+  color: #ff3c00;
   cursor: pointer;
 }

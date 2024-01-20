@@ -29,3 +29,15 @@
   padding: 5px 10px;
   border-radius: 20px;
 }
+
+@media screen and (max-width: 475px) {
+  .profile-details {
+    flex-direction: column;
+  }
+  .profile-role {
+    font-size: 0.8rem;
+  }
+  .profile-name h1 {
+    font-size: 1.7rem;
+  }
+}

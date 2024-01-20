@@ -4,7 +4,7 @@
   justify-content: space-between;
 }
 .edit-btn-group {
-  width: 20%;
+  margin: 0 15px;
   display: flex;
   justify-content: space-evenly;
 }
@@ -14,6 +14,7 @@
   border-radius: 25px;
   cursor: pointer;
   height: 40px;
+  margin: 5px 10px;
 }
 .editprofile-btn:nth-child(1) {
   background-color: #012ab7;
@@ -56,4 +57,17 @@
   padding: 5px 10px;
   border-radius: 20px;
   margin: 10px 5px;
+}
+@media screen and (max-width: 580px) {
+  .editProfile-container {
+    flex-direction: column-reverse;
+  }
+  .edit-btn-group {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 475px) {
+  .language-container {
+    font-size: 0.8rem;
+  }
 }

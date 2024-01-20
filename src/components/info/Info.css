@@ -42,4 +42,22 @@
   .info-container {
     grid-template-columns: none;
   }
+  .info-head {
+    font-size: 1.2rem;
+  }
+  .info-p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .info-h1 {
+    font-size: 1.4rem;
+  }
+  .info-head {
+    font-size: 1rem;
+  }
+  .info-p {
+    font-size: 0.8rem;
+  }
 }

@@ -55,7 +55,13 @@
     height: auto;
   }
   .socials {
-    padding: 10px 0;
+    padding: 5px 0;
     width: 50%;
+  }
+  .footer-logo span {
+    font-size: 1.2rem;
+  }
+  .tnc {
+    font-size: 0.8rem;
   }
 }
