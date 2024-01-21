@@ -13,6 +13,7 @@ import ProfilePage from './components/profile/ProfilePage';
 import UpdateForm from './components/profile/updateForm/UpdateForm';
 import { useSelector } from 'react-redux';
 import Quiz from './components/quizPage/Quiz';
+import AdminLogin from './components/Auth/adminLogin/AdminLogin';
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
             <Route index element={<Home />} />
             <Route path='/login' element={<SignIn />} />
             <Route path='/signup' element={<SignUp />} />
+            <Route path='/admin-login' element={<AdminLogin />} />
             <Route path='' element={<PrivateRoute />}>
               <Route path='/dashboard' element={<Dashboard />} />
             </Route>

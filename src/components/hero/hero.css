@@ -40,7 +40,6 @@
   font-style: italic;
   text-decoration: underline;
 }
-
 .hero-btn {
   width: fit-content;
   padding: 10px 20px;
@@ -55,6 +54,20 @@
 
 .hero-btn:hover {
   background-color: #001a8c;
+}
+
+.hero-link {
+  font-size: 1.2rem;
+  padding: 0 10px;
+}
+.hero-link a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+.hero-link a:hover {
+  color: #012ab7;
 }
 @media screen and (max-width: 975px) {
   .hero-section {
@@ -80,6 +93,9 @@
   .hero-btn {
     font-size: 0.8rem;
   }
+  .hero-link {
+    font-size: 0.8rem;
+  }
 }
 @media screen and (max-width: 400px) {
   .hero-heading {
@@ -89,6 +105,9 @@
     font-size: 0.8rem;
   }
   .hero-btn {
+    font-size: 0.7rem;
+  }
+  .hero-link {
     font-size: 0.7rem;
   }
 }

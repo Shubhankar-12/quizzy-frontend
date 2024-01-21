@@ -30,7 +30,7 @@
 
 .answer-container {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
 .option-container {
